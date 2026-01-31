@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "keneth-di-contracts"
-version = "0.1.0"
+version = "0.1.1"
 description = "Dependency Injector Contracts for the Keneth Python web framework."
 authors = [
     { name="Ismaël Lucas de Leyssac", email="geodgit@duck.com" }
@@ -12,7 +12,7 @@ authors = [
 readme = "README.md"
 license = { file="LICENSE" }
 requires-python = ">=3.12"
-dependencies = ["starlette>=0.45.0"]
+dependencies = []
 
 [project.urls]
 Homepage = "https://github.com/keneth-framework/di-contracts"
