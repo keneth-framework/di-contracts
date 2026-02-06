@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "keneth-di-contracts"
-version = "0.1.1"
+version = "0.1.2"
 description = "Dependency Injector Contracts for the Keneth Python web framework."
 authors = [
     { name="Ismaël Lucas de Leyssac", email="geodgit@duck.com" }
@@ -19,3 +19,15 @@ Homepage = "https://github.com/keneth-framework/di-contracts"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+line-length = 88
+select = ["ALL"]
+ignore = ["D411", "D413", "D410", "D204", "D100", "COM812"]

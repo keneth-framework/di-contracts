@@ -1,6 +1,7 @@
-from .container import ContainerInterface
-from .service import ServiceInterface
-from .container_context import ContainerContextInterface
-from .container_context_target import ContainerContextTarget
+"""Provide contracts for dependency injection container and related components."""
 
-__all__ = ["ContainerInterface", "ServiceInterface", "ContainerContextInterface", "ContainerContextTarget"]
+from .container import ContainerInterface
+from .container_context import ContainerContextInterface
+from .service import ServiceInterface
+
+__all__ = ["ContainerContextInterface", "ContainerInterface", "ServiceInterface"]
